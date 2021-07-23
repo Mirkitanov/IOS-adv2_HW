@@ -13,7 +13,7 @@ class PhotosTableViewCell: UITableViewCell {
     private let titlePhotosLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.text = "Photos"
+        label.text = NSLocalizedString("Photos", comment: "")
         label.textColor = .black
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +85,7 @@ class PhotosTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate(constraints)
     
     }
+     
 
     override func awakeFromNib() {
         super.awakeFromNib()

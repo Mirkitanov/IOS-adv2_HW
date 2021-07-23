@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Navigation
+
+  Created by Админ on 20.07.2021.
+  Copyright © 2021 Artem Novichkov. All rights reserved.
+*/
+
+/*
+  Localizable.strings
+  Navigation
+
+  Created by Админ on 20.07.2021.
+  Copyright © 2021 Artem Novichkov. All rights reserved.
+*/
+"PhotoGallery" = "Photo Gallery";
+"Photos" = "Photos";
+"Post" = "Post";
+"NoStatus" = "No Status";
+"LogIn" = "Log In";
+"DeletePost?" = "Delete the post?";
+"ThePostCannotBeRestored" = "The post cannot be restored";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+"Likes" = "Likes: ";
+"Views" = "Views: ";
+"WitcherText" = "New footage from the filming of the second season of the series 'The Witcher'";
+"NetologyTitle" = "Netology. Changing Careers through Education";
+"NetologyText" = "There is just one course from «Hello, World!» to the first complex iOS application. If you feel the strength to conquer the AppStore tops, it's time to start acting! Profession «iOS developer» is the path that you should follow to the very end. You will learn how to create applications in Swift from scratch: from the filling to the interface. To consolidate knowledge in practice, each the student will prepare a thesis VK-like application with the ability to publish photos, use filters, like and subscribe to other users.";
+"IpManTitle" = "Yip Man. Bruce Lee's teacher, the man who opened the Wing Chun style to the world";
+"IpManText" = "In the 50s - 60s of the XX century in Hong Kong, Ip Man was the first to openly teach Kung Fu Wing Chun, which until then remained a clan. In Europe and America, he is also known as the teacher of film actor Bruce Lee, who introduced the Western world to the Chinese martial arts. Unofficially referred to as the Wing Chun patriarch";
+"BruceLeeTitle" = "Bruce Lee. Legendary person";
+"BruceLeeText" = "«I say empty your mind, be amorphous, formless like water. You pour water into a cup, it becomes a cup. You pour water into a bottle, it becomes a bottle. You pour water into a kettle, it becomes a kettle. Water can flow or it can crush. Be water my friend ...» Bruce Lee philosophy";
+

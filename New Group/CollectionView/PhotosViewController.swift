@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 final class PhotosViewController: UIViewController {
     
     private lazy var collectionView: UICollectionView = {
@@ -30,7 +28,7 @@ final class PhotosViewController: UIViewController {
     }
     
     private func setupViews (){
-        title = "Photo Gallery"
+        title = NSLocalizedString("PhotoGallery", comment: "")
         view.addSubview(collectionView)
         let constraints = [
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

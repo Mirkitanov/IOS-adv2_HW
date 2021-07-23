@@ -10,7 +10,7 @@ class PostsViewController: UIViewController {
         setupTableView()
         setupViews()
     }
-
+    
     private func setupTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
@@ -20,7 +20,7 @@ class PostsViewController: UIViewController {
             forCellReuseIdentifier: String(describing: PostTableViewCell.self))
         
         tableView.register(PhotosTableViewCell.self, forCellReuseIdentifier: String(describing: PhotosTableViewCell.self))
-   }
+    }
     
     private func setupViews() {
         
@@ -49,7 +49,7 @@ extension PostsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         if Storage.tableModel[section].type == .photos
         
         { return 1 }
@@ -61,21 +61,21 @@ extension PostsViewController: UITableViewDataSource {
         }
     }
     
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch Storage.tableModel[indexPath.section].type {
+        case .photos:
+            let cell: PhotosTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotosTableViewCell.self), for: indexPath) as! PhotosTableViewCell
+            return cell
+        case .posts:
+            let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostTableViewCell.self), for: indexPath) as! PostTableViewCell
             
-            switch Storage.tableModel[indexPath.section].type {
-            case .photos:
-                let cell: PhotosTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotosTableViewCell.self), for: indexPath) as! PhotosTableViewCell
-                return cell
-            case .posts:
-                let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostTableViewCell.self), for: indexPath) as! PostTableViewCell
+            let tableSection: PostSection = Storage.tableModel[indexPath.section]
+            let post: Post = tableSection.posts![indexPath.row]
+            cell.postInScreen = post
             
-                let tableSection: PostSection = Storage.tableModel[indexPath.section]
-                let post: Post = tableSection.posts![indexPath.row]
-                            cell.postInScreen = post
-            
-                return cell
-            }
+            return cell
+        }
     }
 }
 
@@ -89,29 +89,29 @@ extension PostsViewController: UITableViewDelegate {
         guard section == 0 else { return .zero }
         
         let headerView = UINib(nibName: "ProfileHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! ProfileHeaderView
-
+        
         return headerView.frame.height
     }
-   
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
         let headerView = UINib(nibName: "ProfileHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! ProfileHeaderView
-
+        
         return headerView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-                switch indexPath.section {
-                case 0:
-                    let photosViewController = PhotosViewController()
-                    
-                    navigationController?.pushViewController(photosViewController, animated: true)
-                default:
-                    return
-                }
         
+        switch indexPath.section {
+        case 0:
+            let photosViewController = PhotosViewController()
+            
+            navigationController?.pushViewController(photosViewController, animated: true)
+        default:
+            return
         }
+        
+    }
     
 }
 
