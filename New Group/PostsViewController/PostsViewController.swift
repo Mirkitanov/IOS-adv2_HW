@@ -12,6 +12,7 @@ class PostsViewController: UIViewController {
     }
     
     private func setupTableView() {
+        tableView.separatorColor = .label
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self
@@ -68,12 +69,11 @@ extension PostsViewController: UITableViewDataSource {
             let cell: PhotosTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotosTableViewCell.self), for: indexPath) as! PhotosTableViewCell
             return cell
         case .posts:
-            let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostTableViewCell.self), for: indexPath) as! PostTableViewCell
             
+            let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostTableViewCell.self), for: indexPath) as! PostTableViewCell
             let tableSection: PostSection = Storage.tableModel[indexPath.section]
             let post: Post = tableSection.posts![indexPath.row]
             cell.postInScreen = post
-            
             return cell
         }
     }

@@ -61,7 +61,7 @@ class ProfileHeaderView: UIView {
     
     private func setupFullNameLabel(){
         fullNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        fullNameLabel.textColor = .black
+        fullNameLabel.textColor = UIColor.createColor(lightMode: .black, darkMode: .white)
         fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -79,7 +79,7 @@ class ProfileHeaderView: UIView {
         avatarImageView.clipsToBounds = true
         avatarImageView.layer.cornerRadius = 50
         avatarImageView.layer.borderWidth = 3
-        avatarImageView.layer.borderColor = UIColor.white.cgColor
+        avatarImageView.layer.borderColor = UIColor.tertiaryLabel.cgColor
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
     }
     
