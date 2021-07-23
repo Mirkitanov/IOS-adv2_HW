@@ -14,7 +14,7 @@ class PhotosTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         label.text = NSLocalizedString("Photos", comment: "")
-        label.textColor = .black
+        label.textColor = .label
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -25,6 +25,7 @@ class PhotosTableViewCell: UITableViewCell {
         imageView.image = #imageLiteral(resourceName: "arrow")
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 15
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -39,6 +40,7 @@ class PhotosTableViewCell: UITableViewCell {
             imageView.contentMode = .scaleAspectFill
             viewStack.addArrangedSubview(imageView)
         }
+        viewStack.backgroundColor = .systemBackground
         viewStack.alignment = .fill
         viewStack.distribution = .fillEqually
         viewStack.contentMode = .scaleAspectFill
@@ -60,6 +62,7 @@ class PhotosTableViewCell: UITableViewCell {
     }
 
     private func setupViews() {
+        contentView.backgroundColor = .systemBackground
         contentView.addSubviews(titlePhotosLabel)
         contentView.addSubviews(viewStack)
         contentView.addSubviews(arrowImageView)

@@ -42,10 +42,8 @@ class LogInViewController: UIViewController {
         logInButton.translatesAutoresizingMaskIntoConstraints = false
         
         logInScrollView.contentInsetAdjustmentBehavior = .automatic
-        logInScrollView.backgroundColor = .white
-        
+        logInScrollView.backgroundColor = UIColor.createColor(lightMode: .white, darkMode: .darkGray)
         logoImageView.image = #imageLiteral(resourceName: "logo")
-        
         bigFieldForTwoTextFieldsImageView.backgroundColor = .systemGray6
         bigFieldForTwoTextFieldsImageView.layer.cornerRadius = 10
         bigFieldForTwoTextFieldsImageView.layer.borderWidth = 0.5
@@ -163,3 +161,13 @@ class LogInViewController: UIViewController {
             subviews.forEach { addSubview($0) }
         }
     }
+
+extension UIColor {
+     static func createColor(lightMode: UIColor, darkMode: UIColor) -> UIColor {
+         guard #available(iOS 13.0, *) else { return lightMode }
+         return UIColor { (traitCollection) -> UIColor in
+             return traitCollection.userInterfaceStyle == .light ? lightMode : darkMode
+         }
+
+     }
+ }
