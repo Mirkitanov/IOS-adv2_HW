@@ -44,7 +44,7 @@ class ProfileHeaderView: UIView {
     // MARK: Actions
     
     @IBAction private func setStatusButton(_ sender: Any) {
-        print (statusTextField.text ?? "Нет статуса")
+        print (statusTextField.text ?? NSLocalizedString("NoStatus", comment: ""))
     }
     
     // MARK: Setups
@@ -83,12 +83,9 @@ class ProfileHeaderView: UIView {
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    
     private func setupViews() {
         
          backgroundColor = .systemGray4
-         
-        //avatarImageView.frame = CGRect(x: 16, y: 16, width: 100, height: 100)
         
          addSubview(avatarImageView)
          addSubview(fullNameLabel)

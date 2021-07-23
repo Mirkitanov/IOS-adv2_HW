@@ -17,11 +17,11 @@ class InfoViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: Any) {
-        let alertController = UIAlertController(title: "Удалить пост?", message: "Пост нельзя будет восстановить", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Отмена", style: .default) { _ in
+        let alertController = UIAlertController(title: NSLocalizedString("DeletePost?", comment: ""), message: NSLocalizedString("ThePostCannotBeRestored", comment: ""), preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default) { _ in
             print("Отмена")
         }
-        let deleteAction = UIAlertAction(title: "Удалить", style: .destructive) { _ in
+        let deleteAction = UIAlertAction(title: NSLocalizedString("Delete", comment: ""), style: .destructive) { _ in
             print("Удалить")
         }
         alertController.addAction(cancelAction)

@@ -51,7 +51,7 @@ class LogInViewController: UIViewController {
         bigFieldForTwoTextFieldsImageView.layer.borderWidth = 0.5
         bigFieldForTwoTextFieldsImageView.layer.borderColor = UIColor.lightGray.cgColor
         
-        logInButton.setTitle("Log In", for: .normal)
+        logInButton.setTitle(NSLocalizedString("LogIn", comment: ""), for: .normal)
         logInButton.setTitleColor(.white, for: .normal)
         logInButton.setTitleColor(.darkGray, for: .selected)
         logInButton.setTitleColor(.darkGray, for: .highlighted)

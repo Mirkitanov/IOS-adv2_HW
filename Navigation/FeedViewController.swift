@@ -10,7 +10,7 @@ import UIKit
 
 final class FeedViewController: UIViewController {
     
-    let post: PostOld = PostOld(title: "Пост")
+    let post: PostOld = PostOld(title: NSLocalizedString("Post", comment: ""))
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

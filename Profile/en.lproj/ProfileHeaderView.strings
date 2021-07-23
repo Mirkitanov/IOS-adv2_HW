@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; text = "Waiting to something"; ObjectID = "6rY-bw-tn2"; */
+"6rY-bw-tn2.text" = "Waiting to something";
+
+/* Class = "UILabel"; text = "Павел Миркитанов"; ObjectID = "mb7-G3-k3s"; */
+"mb7-G3-k3s.text" = "Pavel Mirkitanov";
+
+/* Class = "UIButton"; normalTitle = "Show status"; ObjectID = "pg2-pC-Ov7"; */
+"pg2-pC-Ov7.normalTitle" = "Show status";

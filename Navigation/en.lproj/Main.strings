@@ -1,0 +1,36 @@
+
+/* Class = "UITabBarItem"; title = "Feed"; ObjectID = "0HN-zR-0uF"; */
+"0HN-zR-0uF.title" = "Feed";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "51y-aY-pSo"; */
+"51y-aY-pSo.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "Waiting for something..."; ObjectID = "6Tj-sf-gIA"; */
+"6Tj-sf-gIA.text" = "Waiting for something...";
+
+/* Class = "UIButton"; normalTitle = "Show alert"; ObjectID = "7My-cB-a4g"; */
+"7My-cB-a4g.normalTitle" = "Show alert";
+
+/* Class = "UIButton"; normalTitle = "Open post"; ObjectID = "9ru-89-vrk"; */
+"9ru-89-vrk.normalTitle" = "Open post";
+
+/* Class = "UINavigationItem"; title = "Feed"; ObjectID = "CTA-33-ygc"; */
+"CTA-33-ygc.title" = "Feed";
+
+/* Class = "UINavigationItem"; title = "Post"; ObjectID = "N0m-Za-SVh"; */
+"N0m-Za-SVh.title" = "Post";
+
+/* Class = "UIButton"; normalTitle = "Show status"; ObjectID = "RDK-ab-OHm"; */
+"RDK-ab-OHm.normalTitle" = "Show status";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "SyK-iK-f7q"; */
+"SyK-iK-f7q.title" = "Profile";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "TPi-FS-zh0"; */
+"TPi-FS-zh0.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Email or phone"; ObjectID = "bMU-IG-fVc"; */
+"bMU-IG-fVc.placeholder" = "Email or phone";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tK6-OC-WjJ"; */
+"tK6-OC-WjJ.normalTitle" = "Button";

@@ -44,7 +44,6 @@ class PhotosCollectionViewCell: UICollectionViewCell {
             photoImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             photoImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
             photoImageView.heightAnchor.constraint(equalTo: photoImageView.widthAnchor),
-           
         ]
         
         NSLayoutConstraint.activate(constraints)
